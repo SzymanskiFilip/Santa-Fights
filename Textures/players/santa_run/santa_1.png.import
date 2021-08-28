@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Santa_IDLE_1.png-1b9286260f3d606aa22eb611d604a14f.stex"
+path="res://.import/santa_1.png-40fba21612ad11e0247181b350fd85df.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/players/Santa_IDLE_1.png"
-dest_files=[ "res://.import/Santa_IDLE_1.png-1b9286260f3d606aa22eb611d604a14f.stex" ]
+source_file="res://Textures/players/santa_run/santa_1.png"
+dest_files=[ "res://.import/santa_1.png-40fba21612ad11e0247181b350fd85df.stex" ]
 
 [params]
 

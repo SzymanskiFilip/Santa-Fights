@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Santa_IDLE_3.png-bfbbe457dc35bab0e86197eaaf91601a.stex"
+path="res://.import/santa_4.png-5f171e46966a6e01a80f5c9d94d980a3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/players/Santa_IDLE_3.png"
-dest_files=[ "res://.import/Santa_IDLE_3.png-bfbbe457dc35bab0e86197eaaf91601a.stex" ]
+source_file="res://Textures/players/santa_run/santa_4.png"
+dest_files=[ "res://.import/santa_4.png-5f171e46966a6e01a80f5c9d94d980a3.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
