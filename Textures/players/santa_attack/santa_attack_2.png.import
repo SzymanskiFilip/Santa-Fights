@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/SNOWY_TREE.png-ee33eae7b0cbcc3862b3f74f486567cc.stex"
+path="res://.import/santa_attack_2.png-6082b511068b75569abe7b865306328b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/background/SNOWY_TREE.png"
-dest_files=[ "res://.import/SNOWY_TREE.png-ee33eae7b0cbcc3862b3f74f486567cc.stex" ]
+source_file="res://Textures/players/santa_attack/santa_attack_2.png"
+dest_files=[ "res://.import/santa_attack_2.png-6082b511068b75569abe7b865306328b.stex" ]
 
 [params]
 

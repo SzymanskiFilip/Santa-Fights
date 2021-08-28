@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/SNOWY_MOUNTAINS.png-30129b9b310d81e54488b0725c7cb624.stex"
+path="res://.import/santa_attack_3.png-522601de069754551d348db1262a61f9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://PIXELORAMA-FILES-SANTA-FIGHTS/SNOWY_MOUNTAINS.png"
-dest_files=[ "res://.import/SNOWY_MOUNTAINS.png-30129b9b310d81e54488b0725c7cb624.stex" ]
+source_file="res://Textures/players/santa_attack/santa_attack_3.png"
+dest_files=[ "res://.import/santa_attack_3.png-522601de069754551d348db1262a61f9.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
