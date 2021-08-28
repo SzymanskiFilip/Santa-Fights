@@ -1,9 +1,12 @@
 extends Button
 
-onready var button = $"."
+onready var button: Button = $"."
 
-func _process(_delta):
-	if button.is_hovered():
-		pass
-	else:
-		pass
+func _ready():
+	button.connect("pressed", self, "button_pressed")
+
+func button_pressed():
+	get_tree().change_scene("res://Scenes/TutorialScene.tscn")
+	pass
+
+
