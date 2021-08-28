@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/SNOWY_MOUNTAINS.png-98825363148711b129440adcc1056309.stex"
+path="res://.import/Ground.png-f5db2ef7dea85eb4ed3f9376d81b1fff.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/background/SNOWY_MOUNTAINS.png"
-dest_files=[ "res://.import/SNOWY_MOUNTAINS.png-98825363148711b129440adcc1056309.stex" ]
+source_file="res://Textures/blocks/Ground.png"
+dest_files=[ "res://.import/Ground.png-f5db2ef7dea85eb4ed3f9376d81b1fff.stex" ]
 
 [params]
 
