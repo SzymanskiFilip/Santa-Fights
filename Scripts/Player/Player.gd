@@ -12,9 +12,14 @@ func _physics_process(delta):
 	
 	if Input.is_action_pressed("ui_right"):
 		motion.x = speed
+		$AnimatedSprite.flip_h = false
+		$AnimatedSprite.play("santa_run")
 	elif Input.is_action_pressed("ui_left"):
+		$AnimatedSprite.flip_h = true
+		$AnimatedSprite.play("santa_run")
 		motion.x = -speed
 	else:
+		$AnimatedSprite.play("santa_idle")
 		motion.x = 0
 		
 	if is_on_floor():
