@@ -51,3 +51,4 @@ func _physics_process(_delta):
 func _on_AnimatedSprite_animation_finished():
 	if $AnimatedSprite.animation == "santa_attack":
 		isAttacking = false;
+
