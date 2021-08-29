@@ -3,9 +3,10 @@
 [ext_resource path="res://Scenes/TILESETS/Blocks.tres" type="TileSet" id=1]
 [ext_resource path="res://Textures/background/SNOWY_MOUNTAINS.png" type="Texture" id=2]
 [ext_resource path="res://Scenes/Objects/Player.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Scenes/Objects/Bullet.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scripts/TutorialScene/TutorialScene.gd" type="Script" id=4]
 
 [node name="TutorialScene" type="Node2D"]
+script = ExtResource( 4 )
 
 [node name="TextureRect" type="TextureRect" parent="."]
 margin_left = 1.12244
@@ -33,6 +34,7 @@ tile_data = PoolIntArray( 262178, 5, 0, 262179, 5, 0, 262180, 5, 0, 262181, 5, 0
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
 position = Vector2( 17.0424, 143.237 )
+collision_layer = 2
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 current = true
@@ -46,5 +48,4 @@ smoothing_enabled = true
 smoothing_speed = 3.0
 editor_draw_limits = true
 
-[node name="Bullet" parent="." instance=ExtResource( 4 )]
-position = Vector2( 34.4538, 143.57 )
+[connection signal="add_health" from="." to="Player" method="_on_TutorialScene_add_health"]

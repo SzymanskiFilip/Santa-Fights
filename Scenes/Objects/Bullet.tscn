@@ -19,6 +19,7 @@ radius = 2.90002
 height = 3.84055
 
 [node name="Bullet" type="Area2D"]
+collision_layer = 4
 script = ExtResource( 5 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]

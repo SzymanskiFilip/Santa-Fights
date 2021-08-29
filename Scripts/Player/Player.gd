@@ -16,6 +16,7 @@ func santa_attack():
 		$AnimatedSprite.play("santa_attack")
 		var b = bullet.instance()
 		b.position = $Position2D.global_position
+		b.connect('bullet_crashed', get_parent(), 'add_health')
 		get_parent().add_child(b)
 		
 
@@ -52,3 +53,7 @@ func _on_AnimatedSprite_animation_finished():
 	if $AnimatedSprite.animation == "santa_attack":
 		isAttacking = false;
 
+
+func _on_TutorialScene_add_health():
+	projectiles -= 1
+	print(str(projectiles))
