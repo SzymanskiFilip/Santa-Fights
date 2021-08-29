@@ -16,6 +16,11 @@ func santa_attack():
 		$AnimatedSprite.play("santa_attack")
 		var b = bullet.instance()
 		b.position = $Position2D.global_position
+		if $Position2D.position.x > 0:
+			b.speed = 200
+		elif $Position2D.position.x < 0:
+			#flip bullet texture
+			b.speed = -200
 		b.connect('bullet_crashed', get_parent(), 'add_health')
 		get_parent().add_child(b)
 		
@@ -26,9 +31,11 @@ func _physics_process(_delta):
 		motion.x = speed
 		$AnimatedSprite.flip_h = false
 		$AnimatedSprite.play("santa_run")
+		$Position2D.position.x = 11
 	elif Input.is_action_pressed("ui_left") && isAttacking == false:
 		$AnimatedSprite.flip_h = true
 		$AnimatedSprite.play("santa_run")
+		$Position2D.position.x = -11
 		motion.x = -speed
 	else:
 		motion.x = 0
