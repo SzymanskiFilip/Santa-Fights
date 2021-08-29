@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scenes/TILESETS/Blocks.tres" type="TileSet" id=1]
 [ext_resource path="res://Textures/background/SNOWY_MOUNTAINS.png" type="Texture" id=2]
 [ext_resource path="res://Scenes/Objects/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Objects/Bullet.tscn" type="PackedScene" id=4]
 
 [node name="TutorialScene" type="Node2D"]
 
@@ -44,3 +45,6 @@ drag_margin_v_enabled = true
 smoothing_enabled = true
 smoothing_speed = 3.0
 editor_draw_limits = true
+
+[node name="Bullet" parent="." instance=ExtResource( 4 )]
+position = Vector2( 34.4538, 143.57 )

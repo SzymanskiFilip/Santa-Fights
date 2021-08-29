@@ -9,12 +9,15 @@ var isAttacking = false;
 var motion = Vector2()
 
 var projectiles = 0
+var bullet = preload("res://Scenes/Objects/Bullet.tscn")
 
 func santa_attack():
-	if projectiles <= 2:
 		projectiles += 1
 		$AnimatedSprite.play("santa_attack")
-		print("ATTACKED" + str(projectiles))
+		var b = bullet.instance()
+		b.position = $Position2D.global_position
+		get_parent().add_child(b)
+		
 
 func _physics_process(_delta):
 	motion.y += gravity
@@ -37,7 +40,10 @@ func _physics_process(_delta):
 			
 	if Input.is_action_just_pressed("attack"):
 		isAttacking = true;
-		santa_attack()
+		if projectiles <= 2:
+			santa_attack()
+		else:
+			isAttacking = false;
 	
 	motion = move_and_slide(motion, UP)
 
